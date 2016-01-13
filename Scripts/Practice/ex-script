@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir hello-world
+cd hello-world
+touch hello-world.txt
+
+echo "Hello, $(whoami)" > hello-world.txt

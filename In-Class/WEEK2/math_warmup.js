@@ -1,0 +1,1 @@
+var number1 = (Math.random()*100)+1)

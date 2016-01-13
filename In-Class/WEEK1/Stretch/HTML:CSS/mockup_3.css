@@ -1,0 +1,36 @@
+body {
+  background-color: blue;
+}
+
+h1 {
+  color: white;
+}
+
+table {
+  border: solid black;
+  background-color: white;
+  height: 300px;
+}
+
+div {
+  margin: 10%;
+  width: 30%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  width: 30%;
+  border: solid black;
+  background-color: white;
+  color: black;
+  box-shadow: 3px 6px 2px black;
+}

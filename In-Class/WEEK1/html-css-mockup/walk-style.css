@@ -1,0 +1,64 @@
+.left {
+  float: left;
+}
+
+.nav-top {
+  display: inline;
+}
+
+.spacing {
+  word-spacing: 20px;
+}
+
+.nav-top:before {
+  content: " | ";
+}
+
+.nav-top:first-child:before {
+  content: none;
+}
+
+.nav-left {
+  margin-left: -35px;
+  line-height: 40px;
+}
+
+footer {
+  background-color: rgba(31,33,30,.7);
+  padding: 10px;
+  margin: -20px -10px;
+  width: 100%;
+  clear: both;
+}
+
+nav {
+  background-color: rgba(141, 150, 138, .5);
+  padding: 10px;
+  width: 100%;
+  margin: -10px;
+}
+
+body {
+  height: 100%;
+  color: white;
+  font-family: "Palatino", verdana, sans-serif, Arial;
+  background-image: url('dark_embroidery.png');
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightblue;
+  font-weight: 700;
+}
+
+td {
+  vertical-align: top;
+}

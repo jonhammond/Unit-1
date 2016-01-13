@@ -1,0 +1,45 @@
+.input_box {
+  border: solid black 2px;
+  margin-left: 15px;
+  width: 30%;
+  height: 15px;
+}
+
+.colorado {
+  margin-left: 25px;
+  color: #9D76E8;
+}
+
+.submit {
+  border: solid black;
+  background-color: orange;
+  box-shadow: 2px 3px 6px black;
+  width: 15%;
+  text-align: center;
+  margin: 25px;
+}
+
+nav {
+  border-bottom: solid black;
+  background-color: white;
+  width: 100%;
+  word-spacing: 70px;
+  text-align: left;
+}
+
+body {
+  font-family: "Comic Sans MS", Arial, sans-serif;;
+}
+
+h1 {
+  color: orange;
+}
+
+h3 {
+  padding-left: 25px;
+  color: #9D76E8;
+}
+
+section {
+  margin: 25px;
+}

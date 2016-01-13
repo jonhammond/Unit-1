@@ -1,0 +1,22 @@
+Workflow for starting a new project
+  Git knows to start tracking changes- git add <filename
+  Git knows where to push repo - git remote add origin
+    Example: 
+      1. Make new directory (mkdir <dir name>)
+      2. CD into new directory
+      3. Initialize git (git init)
+      4. Make new file (touch <filename>)
+      5. Create remote repository on github.
+      6. Connect existing local repository with a remote server (git remote add origin <server address>)
+      7. Push repository to remote (git push -u origin master)
+
+Workflow for forking
+  The owner of the forked repo can find out about changes you make to your own forked copy by clicking on the forks for the the file, however, they likely will not know about changes being made unless a pull request is submitted.
+  When you fork a repo you can connect a remote using clone (git clone SSH *or* /path/to/repository)
+    Example:
+      1. Find repository, fork repository.
+      2. Clone forked repository on remote (GitHub) to local machine (git clone <server address>)
+      3. Make changes to repository.
+      4. Stage changes to git (git add <repository>)
+      5. Commit changes to git (git commit -m "Commit message")
+      6. Push changes to remote (git push origin master)
