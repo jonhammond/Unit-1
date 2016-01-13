@@ -1,4 +1,5 @@
 var row = "";
+var row2 = "#####";
 
 function poundPyramid (length) {
   for ( var i = 0; i < length; i++ ) {
@@ -6,10 +7,9 @@ function poundPyramid (length) {
     console.log(row);
   };
   for ( var i = length ; i > 0; i --) {
-    row.slice(0);
-    console.log(row);
+    row2.slice(0);
+    console.log(row2);
   };
-};
-    
+};    
 
 poundPyramid(5);
