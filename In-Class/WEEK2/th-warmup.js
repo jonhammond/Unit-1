@@ -10,7 +10,7 @@ function randomNumberSep (number) {
     sum += Number(numArray[i]);
   }
   console.log("numArray = " + numArray);
-  console.log("sum = " + sum);
+  console.log("Sum of all digits = " + sum);
 
   var newArray = numArray;
   console.log("New Array = " + newArray);
@@ -18,10 +18,11 @@ function randomNumberSep (number) {
   while (newArray.length > 1) {
     newSum = 0;
     newArray.shift();
+
     for (var i=0; i < newArray.length; i++) {
       newSum += Number(newArray[i]);
     }
-    console.log(newSum);
+    console.log("Sum of digits with one less digit= " + newSum);
   }
 };
 
