@@ -31,6 +31,8 @@ var store1 = {
   ]
 }
 
+console.log(store1['2015-01-08'][0][1]);
+
 var store2 = {
   'inventory prices': {
       'Dark Chocolate Crunchies': 4.29,
