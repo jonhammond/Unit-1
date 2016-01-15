@@ -31,8 +31,6 @@ var store1 = {
   ]
 }
 
-console.log(store1['2015-01-08'][0][1]);
-
 var store2 = {
   'inventory prices': {
       'Dark Chocolate Crunchies': 4.29,
@@ -252,3 +250,27 @@ var store4 = {
         'sold on': ['2015-01-06', '2015-01-06', '2015-01-07', '2015-01-10']
       }
 }
+
+//FIRST SECTION
+  //line 8
+  console.log(store1['2015-01-08'][0][1]);
+  //line 9
+  console.log(store4['Dark Chocolate Crunchies']['cost']);
+  //line 10
+  console.log(store2['sale dates']['Banana Bunches']);
+  //line 11
+  console.log(store2['sale dates']['Banana Bunches'].length);
+  //line 12
+  console.log(store4['Berry Bites']['sold on'].length);
+  //line 13
+  var candy = 'Caramel Twists';
+  console.log(store2['sale dates'][candy]);
+  //line 14
+  var candy2 = 'Mint Wafers';
+  console.log(store2['sale dates'][candy2]);
+
+//SECOND SECTION
+  //line 17
+  var mintWafersCost = store2['inventory prices']['Mint Wafers'];
+  console.log(mintWafersCost);
+  //line 18
