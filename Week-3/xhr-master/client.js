@@ -1,0 +1,1 @@
+var usersRequest = new XMLHttpRequest();
