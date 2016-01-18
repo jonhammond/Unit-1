@@ -275,6 +275,28 @@ var store4 = {
   console.log(mintWafersCost);
   //line 18
   // line 19
-  var pbbpSaleDates = store2['sale dates'][pbbpSaleDates];
+  var pbbpSaleDates = store2['sale dates']['Peanut Butter Buttered Peanuts'];
+  console.log('pbbpSaleDates =' + pbbpSaleDates);
+  // line 20 - YES. B/C you are updating the
+  // value of the variable when declaring the 
+  // new variable, 'total'.
+  var total = pbbpSaleDates.push('2015-01-25', '2015-01-26');
   console.log(pbbpSaleDates);
-  // line 20
+  // line 21
+  var ctBeforeDates = store2['sale dates']['Caramel Twists'];
+  console.log('dates before = ' + ctBeforeDates.length);
+  var ctMinusDates = store2['sale dates']['Caramel Twists'].pop();  
+  console.log('dates after pop = ' + ctBeforeDates.length);
+  // line 22
+  var berryBitesData = store3[1]['inventory sold']['Berry Bites'];
+  console.log(berryBitesData);
+  // line 23 YES. B/C you are updating the 
+  // value of the variable when using pop.
+  console.log(berryBitesData.pop());
+
+
+
+
+
+
+
