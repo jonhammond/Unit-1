@@ -274,3 +274,7 @@ var store4 = {
   var mintWafersCost = store2['inventory prices']['Mint Wafers'];
   console.log(mintWafersCost);
   //line 18
+  // line 19
+  var pbbpSaleDates = store2['sale dates'][pbbpSaleDates];
+  console.log(pbbpSaleDates);
+  // line 20
