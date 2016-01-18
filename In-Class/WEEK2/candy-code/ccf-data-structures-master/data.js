@@ -290,9 +290,11 @@ var store4 = {
   // line 22
   var berryBitesData = store3[1]['inventory sold']['Berry Bites'];
   console.log(berryBitesData);
-  // line 23 YES. B/C you are updating the 
-  // value of the variable when using pop.
-  console.log(berryBitesData.pop());
+  // line 23
+  // var berryBitesData = store3[1]['inventory sold']
+
+  // line 26
+  
 
 
 
