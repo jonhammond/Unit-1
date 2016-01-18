@@ -3,7 +3,7 @@ function randomNumber () {
   var randomNum = Math.floor((Math.random()*10));
   console.log("The code generated: " + randomNum);
   console.log("You submitted: " + userNum.value);
-  console.log(
+  // console.log(
   // return randomNum;
   if (randomNum === userNum.value) {
     console.log("You Win!");
