@@ -8,5 +8,11 @@ request.onreadystatechange = function () {
   }
 }
 
+var request2 = new XMLHttpRequest();
+
+request.onreadystatechange = function () {
+  if ()
+}
+
 request.open('GET', '/');
 request.send();
