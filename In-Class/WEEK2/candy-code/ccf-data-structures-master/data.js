@@ -311,10 +311,12 @@ var store4 = {
 
   // line 28
   var store3dates = [];
+  console.log('Store3 dates: ' + store3['date']);
 
-  for (var i=0; i<store3[0]; i++) {
-    console.log(i);
-  }
+  // for (var i=0; i<store3[0].length; i++) {
+  //   store3dates.push(store3[i]['date']);
+  // }
+  // console.log(store3dates);
 
 
 
