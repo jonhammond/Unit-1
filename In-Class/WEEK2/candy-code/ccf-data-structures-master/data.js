@@ -363,9 +363,10 @@ console.log("The length of the array is: " + store1dates.length);
 // line 33
 
 for (var i=0; i<store1dates.length; i++) {
-  if (store1dates[i] === Object.keys(store1)) {
-    console.log('Hi');
-  }
-  }
+  var currentDate = store1dates[i];
+  console.log(store1[currentDate]);
+};
+
+// line 34
 
 
