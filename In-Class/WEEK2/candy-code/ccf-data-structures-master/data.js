@@ -252,74 +252,120 @@ var store4 = {
 }
 
 //FIRST SECTION
+
   //line 8
-  console.log(store1['2015-01-08'][0][1]);
+  // console.log(store1['2015-01-08'][0][1]);
+
   //line 9
-  console.log(store4['Dark Chocolate Crunchies']['cost']);
+  // console.log(store4['Dark Chocolate Crunchies']['cost']);
+
   //line 10
-  console.log(store2['sale dates']['Banana Bunches']);
+  // console.log(store2['sale dates']['Banana Bunches']);
+
   //line 11
-  console.log(store2['sale dates']['Banana Bunches'].length);
+  // console.log(store2['sale dates']['Banana Bunches'].length);
+
   //line 12
-  console.log(store4['Berry Bites']['sold on'].length);
+  // console.log(store4['Berry Bites']['sold on'].length);
+
   //line 13
-  var candy = 'Caramel Twists';
-  console.log(store2['sale dates'][candy]);
+  // var candy = 'Caramel Twists';
+  // console.log(store2['sale dates'][candy]);
+
   //line 14
-  var candy2 = 'Mint Wafers';
-  console.log(store2['sale dates'][candy2]);
+  // var candy2 = 'Mint Wafers';
+  // console.log(store2['sale dates'][candy2]);
 
 //SECOND SECTION
+
   //line 17
-  var mintWafersCost = store2['inventory prices']['Mint Wafers'];
-  console.log(mintWafersCost);
+  // var mintWafersCost = store2['inventory prices']['Mint Wafers'];
+  // console.log(mintWafersCost);
+
   //line 18
+
   // line 19
-  var pbbpSaleDates = store2['sale dates']['Peanut Butter Buttered Peanuts'];
-  console.log('pbbpSaleDates =' + pbbpSaleDates);
+  // var pbbpSaleDates = store2['sale dates']['Peanut Butter Buttered Peanuts'];
+  // console.log('pbbpSaleDates =' + pbbpSaleDates);
+
   // line 20 - YES. B/C you are updating the
   // value of the variable when declaring the
   // new variable, 'total'.
-  var total = pbbpSaleDates.push('2015-01-25', '2015-01-26');
-  console.log(pbbpSaleDates);
+  // var total = pbbpSaleDates.push('2015-01-25', '2015-01-26');
+  // console.log(pbbpSaleDates);
+
   // line 21
-  var ctBeforeDates = store2['sale dates']['Caramel Twists'];
-  console.log('dates before = ' + ctBeforeDates.length);
-  var ctMinusDates = store2['sale dates']['Caramel Twists'].pop();
-  console.log('dates after pop = ' + ctBeforeDates.length);
+  // var ctBeforeDates = store2['sale dates']['Caramel Twists'];
+  // console.log('dates before = ' + ctBeforeDates.length);
+  // var ctMinusDates = store2['sale dates']['Caramel Twists'].pop();
+  // console.log('dates after pop = ' + ctBeforeDates.length);
+
   // line 22
-  var berryBitesData = store3[1]['inventory sold']['Berry Bites'];
-  console.log(berryBitesData);
+  // var berryBitesData = store3[1]['inventory sold']['Berry Bites'];
+  // console.log(berryBitesData);
+
   // line 23
   // var berryBitesData = store3[1]['inventory sold']
 
   // line 26
   // var jan8 = store1
-  var newArray = [];
-  for (var i=0; i<store1['2015-01-08'].length; i++) {
-    newArray.push(store1['2015-01-08'][i][0]);
-  };
+  // var newArray = [];
+  // for (var i=0; i<store1['2015-01-08'].length; i++) {
+  //   newArray.push(store1['2015-01-08'][i][0]);
+  // }
 
-  console.log(newArray);
+  // console.log(newArray);
 
   // line 27
-  var counter = 0;
-  for (var i=0; i<store1['2015-01-08'].length; i++) {
-    counter += (store1['2015-01-08'][i][2]);
-  }
-  console.log(counter);
+  // var counter = 0;
+  // for (var i=0; i<store1['2015-01-08'].length; i++) {
+  //   counter += (store1['2015-01-08'][i][2]);
+  // }
+  // console.log(counter);
 
   // line 28
-  var store3dates = [];
-  console.log('Store3 dates: ' + store3['date']);
+  // var store3dates = [];
 
-  // for (var i=0; i<store3[0].length; i++) {
-  //   store3dates.push(store3[i]['date']);
+  // for (var i=0; i<store3.length; i++) {
+  //   store3dates.push(store3[i].date);
   // }
-  // console.log(store3dates);
 
+  // console.log("Store3 sale dates: " + store3dates);
 
+  // line 29
 
+  // var cTwists = {};
+  // var datesArray = store2['sale dates']['Caramel Twists'];
+  // console.log(datesArray);
 
+  // for (var i=0; i < datesArray.length; i++) {
+  //   if (cTwists[datesArray[i]]) {
+  //     ++cTwists[datesArray[i]];
+  //   }
+  //   else {
+  //     cTwists[datesArray[i]] = 1;
+  //   }
+  // }
+
+  // console.log(cTwists);
+
+  // line 30
+  // I was having problems logging the object, cTwists, to the console because I had put a string in front of the object, and then concatenated. I was able to increment the quantity sold by counting the number of times a date showed up, and then adding 1 to the value for each time that date showed up. To do this I used the shorthand ++.
+
+// line 31
+
+var store1dates = Object.keys(store1);
+console.log(store1dates);
+
+// line 32
+console.log("The length of the array is: " + store1dates.length);
+
+// line 33
+
+for (var i=0; i<store1dates.length; i++) {
+  if (store1dates[i] === Object.keys(store1)) {
+    console.log('Hi');
+  }
+  }
 
 
