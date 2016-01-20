@@ -1,34 +1,34 @@
 var store1 = {
-  '2015-01-06': [
-    ['Dark Chocolate Crunchies', '4.39', 1],
-    ['Mint Wafers', '1.19', 3],
-    ['Peppermint Poppers', '2.48', 2],
-    ['Peanut Butter Buttered Peanuts', '1.89', 6]
-  ],
-  '2015-01-07': [
-    ['Dark Chocolate Crunchies', '4.39', 4],
-    ['Berry Bites', '7.99', 3],
-    ['Peppermint Poppers', '2.48', 1],
-    ['Caramel Twists', '.60', 7]
-  ],
-  '2015-01-08': [
-    ['Banana Bunches', '4.63', 1],
-    ['Peppermint Poppers', '2.48', 3],
-    ['Mint Wafers', '1.19', 7],
-    ['Dark Chocolate Crunchies', '4.39', 2],
-    ['Caramel Twists', '.60', 1]
-  ],
-  '2015-01-09': [
-    ['Caramel Twists', '.60', 3],
-    ['Peanut Butter Buttered Peanuts', '1.89', 2]
-  ],
-  '2015-01-10': [
-    ['Peanut Butter Buttered Peanuts', '1.89', 7],
-    ['Caramel Twists', '.60', 2],
-    ['Berry Bites', '7.99', 3],
-    ['Dark Chocolate Crunchies', '4.39', 8],
-    ['Mint Wafers', '1.19', 2]
-  ]
+              '2015-01-06': [
+                ['Dark Chocolate Crunchies', '4.39', 1],
+                ['Mint Wafers', '1.19', 3],
+                ['Peppermint Poppers', '2.48', 2],
+                ['Peanut Butter Buttered Peanuts', '1.89', 6]
+              ],
+              '2015-01-07': [
+                ['Dark Chocolate Crunchies', '4.39', 4],
+                ['Berry Bites', '7.99', 3],
+                ['Peppermint Poppers', '2.48', 1],
+                ['Caramel Twists', '.60', 7]
+              ],
+              '2015-01-08': [
+                ['Banana Bunches', '4.63', 1],
+                ['Peppermint Poppers', '2.48', 3],
+                ['Mint Wafers', '1.19', 7],
+                ['Dark Chocolate Crunchies', '4.39', 2],
+                ['Caramel Twists', '.60', 1]
+              ],
+              '2015-01-09': [
+                ['Caramel Twists', '.60', 3],
+                ['Peanut Butter Buttered Peanuts', '1.89', 2]
+              ],
+              '2015-01-10': [
+                ['Peanut Butter Buttered Peanuts', '1.89', 7],
+                ['Caramel Twists', '.60', 2],
+                ['Berry Bites', '7.99', 3],
+                ['Dark Chocolate Crunchies', '4.39', 8],
+                ['Mint Wafers', '1.19', 2]
+              ]
 }
 
 var store2 = {
@@ -354,19 +354,72 @@ var store4 = {
 
 // line 31
 
-var store1dates = Object.keys(store1);
-console.log(store1dates);
+// var store1dates = Object.keys(store1);
+// console.log('Store 1 dates (keys): ' + store1dates);
 
 // line 32
-console.log("The length of the array is: " + store1dates.length);
+// console.log("The length of the array is: " + store1dates.length);
 
 // line 33
 
-for (var i=0; i<store1dates.length; i++) {
-  var currentDate = store1dates[i];
-  console.log(store1[currentDate]);
-};
+// for (var i=0; i<store1dates.length; i++) {
+//   var currentDate = store1dates[i];
+  // console.log('store1dates[i]: ' + store1dates[i]);
+  // console.log('store1[currentDate]: ' + store1[currentDate]);
+// }
 
 // line 34
+
+var datesArray = Object.keys(store1);
+console.log(datesArray);
+
+var cookieArray = datesArray[2][2];
+console.log('cookieArray: ' + cookieArray);
+
+console.log(store1['2015-01-06'][2][2]);
+
+console.log('length=',store1['2015-01-06'][2].length);
+
+for (var i=0; i<datesArray.length; i++) {
+  console.log('index i = ' + i + ' = ' + datesArray[i]);
+  var numberSold = store1[datesArray][2];
+  console.log('numberSold = ' + numberSold);
+  // for (var n=0; n<datesArray[i].length; n++) {
+    // console.log(datesArray[2].length);
+    // console.log(datesArray[i][n]);
+   // }
+  // console.log("OuterArray: " + i);
+
+}
+
+
+
+
+
+
+// for (var i=0; i<datesOuterArray.length; i++) {
+
+//   for (var n=0; n<datesInnerArray[i].length; n++) {
+//     console.log(datesArray[i][n]);
+//   }
+//   console.log("OuterArray: " + i);
+
+// }
+
+
+
+
+
+
+
+
+//   var currentDate = store1dates[i];
+//   console.log('store1dates[i]: ' + store1dates[i]);
+//   console.log('store1[currentDate][number]: ' + store1[currentDate]);
+//   for (var n=0; n<store1dates[i].length; n++) {
+//     var currentDateArray = store1[i][n];
+//     console.log('currentDateArray: ' + currentDateArray);
+//   }
+// }
 
 
