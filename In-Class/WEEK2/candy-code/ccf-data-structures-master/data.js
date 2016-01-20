@@ -354,7 +354,7 @@ var store4 = {
 
 // line 31
 
-// var store1dates = Object.keys(store1);
+var store1dates = Object.keys(store1);
 // console.log('Store 1 dates (keys): ' + store1dates);
 
 // line 32
@@ -364,62 +364,51 @@ var store4 = {
 
 // for (var i=0; i<store1dates.length; i++) {
 //   var currentDate = store1dates[i];
-  // console.log('store1dates[i]: ' + store1dates[i]);
-  // console.log('store1[currentDate]: ' + store1[currentDate]);
+//   // console.log('store1dates[i]: ' + store1dates[i]);
+//   console.log('store1[currentDate]: ' + store1[currentDate]);
 // }
 
 // line 34
 
-var datesArray = Object.keys(store1);
-console.log(datesArray);
+var counter = 0;
 
-var cookieArray = datesArray[2][2];
-console.log('cookieArray: ' + cookieArray);
-
-console.log(store1['2015-01-06'][2][2]);
-
-console.log('length=',store1['2015-01-06'][2].length);
-
-for (var i=0; i<datesArray.length; i++) {
-  console.log('index i = ' + i + ' = ' + datesArray[i]);
-  var numberSold = store1[datesArray][2];
-  console.log('numberSold = ' + numberSold);
-  // for (var n=0; n<datesArray[i].length; n++) {
-    // console.log(datesArray[2].length);
-    // console.log(datesArray[i][n]);
-   // }
-  // console.log("OuterArray: " + i);
-
+for (var i=0; i<store1dates.length; i++) {
+  var currentDate = store1dates[i];
+  // console.log('store1[currentDate]: ' + store1[currentDate][0][2]);
+  for (var n=0; n<store1[currentDate].length; n++) {
+    counter += store1[currentDate][n][2];
+  }
+  console.log('Counter for object ' + i + ' = ' + counter);
 }
 
 
+// DENNIS'S ANSWER FOR LINE 34 BELOW
 
+// var janEightSales = store1['2015-01-08'];
+// var arrJanEightSales = [];
+// var counter = 0
 
-
-
-// for (var i=0; i<datesOuterArray.length; i++) {
-
-//   for (var n=0; n<datesInnerArray[i].length; n++) {
-//     console.log(datesArray[i][n]);
-//   }
-//   console.log("OuterArray: " + i);
-
+// for ( var i = 0; i < janEightSales.length; i++) {
+//   counter = counter + janEightSales[i][2];
+//   console.log(janEightSales[i][2]);
 // }
+// console.log("total sales: " + counter);
 
 
+// line 35
 
+  // var cTwists = {};
+  // var datesArray = store2['sale dates']['Caramel Twists'];
+  // console.log(datesArray);
 
+  // for (var i=0; i < datesArray.length; i++) {
+  //   if (cTwists[datesArray[i]]) {
+  //     ++cTwists[datesArray[i]];
+  //   }
+  //   else {
+  //     cTwists[datesArray[i]] = 1;
+  //   }
+  // }
 
-
-
-
-//   var currentDate = store1dates[i];
-//   console.log('store1dates[i]: ' + store1dates[i]);
-//   console.log('store1[currentDate][number]: ' + store1[currentDate]);
-//   for (var n=0; n<store1dates[i].length; n++) {
-//     var currentDateArray = store1[i][n];
-//     console.log('currentDateArray: ' + currentDateArray);
-//   }
-// }
-
+  // console.log(cTwists);
 

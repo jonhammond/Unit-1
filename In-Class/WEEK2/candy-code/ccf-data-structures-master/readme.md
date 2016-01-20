@@ -26,7 +26,7 @@ A local chain of candy stores has hired you to draw conclusions from their sales
  - Create a loop to read which candies were sold by store1 on Jan 8. After simply outputting the data, try creating an array that contains the candy names.
  - With your previous loop, use it to count the total number of candies sold that day at store1. Where do you have to initialize the counter variable? Why?
  - Create a loop to iterate over the sale data from store3. Use this loop to create an array of dates contained in the sale data.
- - * Iterate over the store2 sale dates for Caramel Twists. Use this to create an object containing dates as the key and the value as the quantity sold on that day.
+ - Iterate over the store2 sale dates for Caramel Twists. Use this to create an object containing dates as the key and the value as the quantity sold on that day.
  - What problems did you have with the previous task? Were you able to easily increment the quantity sold data? Why?
  - Use `Object.keys()` to get an array of the dates that candies were sold at store1.
  - Objects don't have a built-in length property, but we can use the array of keys to determine the "length" of the object.
