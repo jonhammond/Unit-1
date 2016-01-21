@@ -1,0 +1,38 @@
+body {
+  background-image: url("https://s.yimg.com/os/mit/media/m/weather/images/fallbacks/lead/cloudy_d-e618500.jpg");
+  font-family: arial;
+}
+
+h1, h2 {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+#input {
+  border: solid gray 1px;
+  border-radius: 10px;
+  height: 50px;
+  width: 500px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.button {
+  height: 50px;
+  width: 500px;
+  background-color: rgba(42,42,43,1);
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.container {
+  background-color: rgba(245,245,220,.5);
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 45px;
+}
+
+.center {
+  text-align: center;
+}

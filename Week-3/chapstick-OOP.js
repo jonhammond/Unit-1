@@ -71,7 +71,7 @@
   // console.log(Domingo.sayHeight());
   // console.log(Domingo.say("Today, I am going to teach you how to hit a home run."));
 
-// PIZZA
+// MUPPET-MAKER!!!
    var MuppetMaker = function(choice) {
     this.muppetName = choice.muppetName;
     this.hair = choice.hair;
