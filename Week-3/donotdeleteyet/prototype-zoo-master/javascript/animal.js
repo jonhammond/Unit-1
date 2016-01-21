@@ -38,10 +38,6 @@ Animal.prototype.sleep = function () {
   }
 }
 
-var cat = new Animal ('cat', 'Meow', 'Chester', 10, false);
-var wolf = new Animal ('wolf', 'HOWL', 'Benicio', 10, false);
-var bear = new Animal ('bear', 'GRRR', 'Smokey', 22, false);
-var animals = [cat, wolf, bear];
 // var cat = new Animal('Siamese');
 // console.log(cat);
 
@@ -60,6 +56,12 @@ var animals = [cat, wolf, bear];
 // cat.wakeUp();
 // console.log(cat);
 // console.log(cat.sleep());
+
+
+var cat = new Animal ('cat', 'Meow', 'Chester', 10, false);
+var wolf = new Animal ('wolf', 'HOWL', 'Benicio', 10, false);
+var bear = new Animal ('bear', 'GRRR', 'Smokey', 22, false);
+var animals = [cat, wolf, bear];
 
 function Zoo (location, name, status, animals) {
   this.location = location;
