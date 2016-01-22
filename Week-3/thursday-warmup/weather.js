@@ -68,16 +68,16 @@ function weather (location) {
     console.log(weatherType);
 
     if (weatherType === 'Clouds') {
-        $('#boulderWeather').append("cloudy!");
+        $('p').html("cloudy!");
       }
     else if (weatherType === 'Clear') {
-      $('#boulderWeather').append("real fucking nice!");
+      $('p').html("real fucking nice!");
     }
     else if (weatherType === 'Fog') {
-      $('#boulderWeather').append("foggy.")
+      $('p').html("foggy.")
     }
     else {
-      $('#boulderWeather').append("weather.");
+      $('p').html("weather.");
     };
   });
 }
