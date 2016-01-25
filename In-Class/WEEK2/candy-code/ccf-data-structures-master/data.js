@@ -413,24 +413,7 @@ var store4 = {
 
   // line 36
 
-    // var store1dates = Object.keys(store1);
-
-    // var candyObj2 = {};
-
-    // for (var i=0; i<store1dates.length; i++) {
-    //   var currentDate = store1dates[i];
-    //   for (var n=0; n<store1[currentDate].length; n++) {
-    //     var newKey = store1[currentDate][n][0];
-    //     var newValue = store1[currentDate][n][2];
-    //     candyObj2[newKey] = newValue;
-    //   }
-    //   console.log(candyObj2);
-    // };
-
-  // line 37
-  // I was supposed to add them?
-
-  var store1dates = Object.keys(store1);
+    var store1dates = Object.keys(store1);
 
     var candyObj2 = {};
 
@@ -439,8 +422,29 @@ var store4 = {
       for (var n=0; n<store1[currentDate].length; n++) {
         var newKey = store1[currentDate][n][0];
         var newValue = store1[currentDate][n][2];
-        candyObj2[newKey] = ++newValue;
-      }
 
-      console.log(candyObj2);
+        candyObj2[newKey] = newValue;
+      }
+      // console.log(candyObj2);
     };
+    console.log(candyObj2);
+
+// line 37
+// I was supposed to add them?
+
+//line 38
+
+// var store1dates = Object.keys(store1);
+
+//   var candyObj2 = {};
+
+//   for (var i=0; i<store1dates.length; i++) {
+//     var currentDate = store1dates[i];
+//     for (var n=0; n<store1[currentDate].length; n++) {
+//       var newKey = store1[currentDate][n][0];
+//       var newValue = store1[currentDate][n][2];
+//       candyObj2[newKey] = ++newValue;
+//     }
+
+//     console.log(candyObj2);
+//   };

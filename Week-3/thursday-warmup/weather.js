@@ -59,6 +59,7 @@ function weather (location) {
     "crossDomain": true,
     "url": url,
     "method": "GET",
+    dataType : "jsonp"
   };
 
   $.ajax(inputCityState).done(function (response) {
