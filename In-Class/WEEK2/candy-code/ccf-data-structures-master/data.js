@@ -420,8 +420,9 @@ var store4 = {
     for (var i=0; i<store1dates.length; i++) {
       var currentDate = store1dates[i];
       for (var n=0; n<store1[currentDate].length; n++) {
-        var newKey = store1[currentDate][n][0];
         var newValue = store1[currentDate][n][2];
+        newValue += newValue;
+        var newKey = store1[currentDate][n][0];
 
         candyObj2[newKey] = newValue;
       }
@@ -430,7 +431,7 @@ var store4 = {
     console.log(candyObj2);
 
 // line 37
-// I was supposed to add them?
+// I did have problems adding the value for each cookie sold, and it was mostly because I was trying to += store1[currentDate][n][2] instead of just assigning it to a variable, and then doing += with that variable. See newValue += newValue above.
 
 //line 38
 
