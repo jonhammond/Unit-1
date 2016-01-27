@@ -38,3 +38,7 @@ h1 {
 .warning {
   border: 1px solid red;
 }
+
+.allGood {
+  border: 1px solid green;
+}
