@@ -17,6 +17,41 @@ $('.order').on('click', function () {
 
 });
 
+$('.card-number').on('blur', function () {
+  //do something
+  var cardNum = $('.card-number');
+  var cardNumVal = $('.card-number').val();
+  if (Stripe.card.validateCardNumber(cardNumVal) === false) {
+    cardNum.css('background-color', 'red');
+  }
+  else {
+    cardNum.css('background-color', 'green');
+  }
+});
+
+$('.card-cvc').on('blur', function () {
+  var cvc = $('.card-cvc');
+  var cvcVal = $('.card-cvc').val();
+  if (Stripe.card.validateCVC(cvcVal) === false) {
+    cvc.css('background-color', 'red');
+  }
+  else {
+    cvc.css('background-color', 'green');
+  }
+});
+
+$('.card-expiry').on('blur', function() {
+  var exp = $('.card-expiry');
+  var expMonth = exp.val().split('/')[0];
+  var expYear = exp.val().split('/')[1];
+  if (Stripe.card.validateExpiry(expMonth, expYear) === false) {
+    exp.css('background-color', 'red');
+  }
+  else {
+    exp.css('background-color', 'green');
+  }
+});
+
 function stripeResponseHandler(status, response) {
   if (response.error) {
     console.log(response.error.message);
