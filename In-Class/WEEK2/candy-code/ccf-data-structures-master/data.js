@@ -334,18 +334,19 @@ var store4 = {
 
   // line 29
 
-  // var cTwists = {};
-  // var datesArray = store2['sale dates']['Caramel Twists'];
+  var cTwists = {};
+  var datesArray = store2['sale dates']['Caramel Twists'];
   // console.log(datesArray);
 
-  // for (var i=0; i < datesArray.length; i++) {
-  //   if (cTwists[datesArray[i]]) {
-  //     ++cTwists[datesArray[i]];
-  //   }
-  //   else {
-  //     cTwists[datesArray[i]] = 1;
-  //   }
-  // }
+  for (var i=0; i < datesArray.length; i++) {
+    if (cTwists[datesArray[i]]) {
+      console.log(cTwists[datesArray[i]]);
+      ++cTwists[datesArray[i]];
+    }
+    else {
+      cTwists[datesArray[i]] = 1;
+    }
+  }
 
   // console.log(cTwists);
 
@@ -413,39 +414,21 @@ var store4 = {
 
   // line 36
 
-    var store1dates = Object.keys(store1);
+    var storeOneDates = Object.keys(store1);
+    // console.log(storeOneDates);
+    var newCandyObject = {};
+    var add = 0;
 
-    var candyObj2 = {};
-
-    for (var i=0; i<store1dates.length; i++) {
-      var currentDate = store1dates[i];
-      for (var n=0; n<store1[currentDate].length; n++) {
-        var newValue = store1[currentDate][n][2];
-        newValue += newValue;
-        var newKey = store1[currentDate][n][0];
-
-        candyObj2[newKey] = newValue;
+    for (var i=0; i<storeOneDates.length; i++) {
+      var salesDate = storeOneDates[i];
+      for (var n=0; n<store1[salesDate].length; n++) {
+        var cookiesSold = store1[salesDate][n][2];
+        // newCandyObject[newKey] = add;
+        console.log(cookiesSold);
       }
-      // console.log(candyObj2);
-    };
-    console.log(candyObj2);
+  }
+  console.log(newCandyObject);
+
 
 // line 37
 // I did have problems adding the value for each cookie sold, and it was mostly because I was trying to += store1[currentDate][n][2] instead of just assigning it to a variable, and then doing += with that variable. See newValue += newValue above.
-
-//line 38
-
-// var store1dates = Object.keys(store1);
-
-//   var candyObj2 = {};
-
-//   for (var i=0; i<store1dates.length; i++) {
-//     var currentDate = store1dates[i];
-//     for (var n=0; n<store1[currentDate].length; n++) {
-//       var newKey = store1[currentDate][n][0];
-//       var newValue = store1[currentDate][n][2];
-//       candyObj2[newKey] = ++newValue;
-//     }
-
-//     console.log(candyObj2);
-//   };
