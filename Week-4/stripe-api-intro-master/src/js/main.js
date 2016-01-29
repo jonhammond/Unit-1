@@ -22,10 +22,10 @@ $('.card-number').on('blur', function () {
   var cardNum = $('.card-number');
   var cardNumVal = $('.card-number').val();
   if (Stripe.card.validateCardNumber(cardNumVal) === false) {
-    cardNum.css('background-color', 'red');
+    cardNum.css('border', '3px solid red');
   }
   else {
-    cardNum.css('background-color', 'green');
+    cardNum.css('border', '3px solid green');
   }
 });
 
@@ -33,10 +33,10 @@ $('.card-cvc').on('blur', function () {
   var cvc = $('.card-cvc');
   var cvcVal = $('.card-cvc').val();
   if (Stripe.card.validateCVC(cvcVal) === false) {
-    cvc.css('background-color', 'red');
+    cvc.css('border', '3px solid red');
   }
   else {
-    cvc.css('background-color', 'green');
+    cvc.css('border', '3px solid green');
   }
 });
 
@@ -45,10 +45,10 @@ $('.card-expiry').on('blur', function() {
   var expMonth = exp.val().split('/')[0];
   var expYear = exp.val().split('/')[1];
   if (Stripe.card.validateExpiry(expMonth, expYear) === false) {
-    exp.css('background-color', 'red');
+    exp.css('border', '3px solid red');
   }
   else {
-    exp.css('background-color', 'green');
+    exp.css('border', '3px solid green');
   }
 });
 

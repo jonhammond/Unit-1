@@ -334,19 +334,19 @@ var store4 = {
 
   // line 29
 
-  var cTwists = {};
-  var datesArray = store2['sale dates']['Caramel Twists'];
-  // console.log(datesArray);
+  // var cTwists = {};
+  // var datesArray = store2['sale dates']['Caramel Twists'];
+  // // console.log(datesArray);
 
-  for (var i=0; i < datesArray.length; i++) {
-    if (cTwists[datesArray[i]]) {
-      console.log(cTwists[datesArray[i]]);
-      ++cTwists[datesArray[i]];
-    }
-    else {
-      cTwists[datesArray[i]] = 1;
-    }
-  }
+  // for (var i=0; i < datesArray.length; i++) {
+  //   if (cTwists[datesArray[i]]) {
+  //     console.log(cTwists[datesArray[i]]);
+  //     ++cTwists[datesArray[i]];
+  //   }
+  //   else {
+  //     cTwists[datesArray[i]] = 1;
+  //   }
+  // }
 
   // console.log(cTwists);
 
@@ -417,18 +417,37 @@ var store4 = {
     var storeOneDates = Object.keys(store1);
     // console.log(storeOneDates);
     var newCandyObject = {};
-    var add = 0;
+    var totalSold = 0;
 
     for (var i=0; i<storeOneDates.length; i++) {
-      var salesDate = storeOneDates[i];
+      var salesDate = storeOneDates[i]; //each date
+
+      // console.log(storeOneDates[i]);
       for (var n=0; n<store1[salesDate].length; n++) {
+        var cookieName = store1[salesDate][n][0];
         var cookiesSold = store1[salesDate][n][2];
-        // newCandyObject[newKey] = add;
         console.log(cookiesSold);
+        if(Object.keys(newCandyObject).indexOf(cookieName) === -1) {
+          newCandyObject[cookieName] = cookiesSold;
+        } else {
+          newCandyObject[cookieName] += cookiesSold;
+        }
+        // console.log(Object.keys(newCandyObject))
+        // if (Object.keys(newCandyObject).indexOf(cookieName)!== -1){
+        //   newCandyObject[cookieName] += cookiesSold;
+        // }
+        // for (var x=0; x<store1[s alesDate][n].length; x++)
+        // console.log(cookieName, cookiesSold)
+
+        // newCandyObject[cookieName] = cookiesSold;
       }
+
   }
   console.log(newCandyObject);
 
-
+  // for (var n=0; n<store1[salesDate].length; n++) {
+  //       var cookiesSold = store1[salesDate][n][2];
+  //       console.log(cookiesSold);
+  //     }
 // line 37
 // I did have problems adding the value for each cookie sold, and it was mostly because I was trying to += store1[currentDate][n][2] instead of just assigning it to a variable, and then doing += with that variable. See newValue += newValue above.

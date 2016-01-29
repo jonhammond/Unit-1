@@ -1,0 +1,22 @@
+#rock {
+ border: 1px solid red;
+ background-image: url("../rock.jpeg");
+ height: 200px;
+
+}
+#paper {
+ border: 1px solid red;
+ background-image: url("../paper.jpeg");
+ height: 200px;
+
+}
+#scissors {
+ border: 1px solid red;
+ background-image: url("../scissors.jpeg");
+ height: 200px;
+
+}
+
+p {
+  border: 1px solid green;
+}
