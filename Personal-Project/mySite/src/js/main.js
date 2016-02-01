@@ -1,8 +1,29 @@
 // add scripts
 
 $(document).on('ready', function() {
-  // $('#userInput').on('click', function(){
-  //   $('#middle').append(+ '> <img src="../GIF-final/alligator.gif" + ');
-    console.log('sanity check!');
-  // });
+  console.log('sanity check!');
+  var userInput = $('#userInput');
+  $('form').on('submit', function(el) {
+    el.preventDefault();
+    console.log(userInput.val());
+    submitLetters(userInput.val());
+  });
 });
+
+function submitLetters(input){
+    for (var i=0; i<input.length; i++) {
+      if (input[i] === 'a') {
+        console.log(input);
+        $('#slide').append('<img src = "../whitegifs/alligator.gif">');
+      }
+      else {
+        console.log(input);
+      }
+    }
+  }
+
+// $('form').on('submit', function(event){
+//     event.preventDefault();
+//     console.log(userInput);
+//     submitLetters(userInput);
+//   });
