@@ -1,0 +1,38 @@
+body {
+  background-color: rgba(46,46,45,1);
+  padding-bottom: 500px;
+  height: auto;
+}
+
+header {
+  text-align: center;
+  font-size: 40px;
+  padding: 40px;
+  margin: 100px 0px;
+  border-radius: 30px;
+}
+
+img.centered {
+  display: block;
+  margin: auto;
+}
+
+.main {
+  padding-top: 30px -25px;
+  text-align: center;
+  /*Consider moving this padding-top to a class that defines the container for the row instead of the main div*/
+}
+
+.sides {
+  line-height: 10px;
+  padding-top: 30px;
+}
+
+.dispBlock {
+  display: block;
+}
+
+#userInput {
+  margin-top: 50px;
+  font-size: 20px;
+}

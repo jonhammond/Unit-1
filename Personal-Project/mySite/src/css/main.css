@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(46,46,45,1);
+  /*background-color: rgba(46,46,45,1);*/
   padding-bottom: 500px;
   height: auto;
 }
@@ -15,10 +15,6 @@ header {
 img.centered {
   display: block;
   margin: auto;
-}
-
-#middle {
-
 }
 
 .main {
