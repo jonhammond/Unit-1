@@ -1,87 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>ANTS IN MAH PANTS</title>
+    <title>DANCE MACHINE</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/spacelab/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Amatic+SC|Orbitron|Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
-  <body>
-   <div class="container">
-    <!-- BANNER -->
-    <h1 class="bg-primary">Banner</h1>
+</head>
+<body>
+ <div class="hero container">
+  <!-- BANNER -->
+    <header>Ants in Mah Pants</header>
+  <!-- END BANNER -->
 
-    <!-- CAROUSEL -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-        <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- CAROUSEL SLIDES -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active" align="center" id="slide">
-            <img src="./whitegifs/gangnamstyle.gif" alt="gangnamstyle">
-            <div class="carousel-caption" align="center"></div>
-          </div>
-        </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+  <h1 class="text">Add a partner or dance solo...</h1>
+    <a href="#" class="btn "
+
+  <h1 class="text">Pick some tunes...</h1>
+  <!-- SPOTIFY TUNES -->
+    <div class="row">
+      <!-- HIP-HOP (SONG) -->
+      <figure class="col-xs-2">
+        <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:2jvJnYj1DfCT1tX0Otp8z7" width="100" height="100" frameborder="0" allowtransparency="true"></iframe>
+        <figcaption>POP</figcaption>
+      </figure>
+      <!-- HIP-HOP (PL) -->
+      <figure class="col-xs-2">
+        <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify_canada:playlist:6GH5q2Z8V2VvDdZYB1Wqj9&view=coverart" width="100" height="100" frameborder="0" allowtransparency="true"></iframe>
+        <figcaption>HIP-HOP</figcaption>
+      </figure>
+      <!-- FUNK (PL) -->
+      <figure class="col-xs-2">
+        <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:4CjIR9vlp6xQSH99fOx3aj&view=coverart" width="100" height="100" frameborder="0" allowtransparency="true"></iframe>
+        <figcaption>FUNK</figcaption>
+      </figure>
+      <!-- COUNTRY (PL) -->
+      <figure class="col-xs-2">
+        <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:3JtIIyGCZBCTphGyrbhG16&view=coverart" width="100" height="100" frameborder="0" allowtransparency="true"></iframe>
+        <figcaption>COUNTRY</figcaption>
+      </figure>
+      <!-- EDM (PL) -->
+      <figure class="col-xs-2">
+        <iframe src="https://embed.spotify.com/?uri=spotify:user:knivgaffel:playlist:6RXgHyqUiEbSmX7NQZ05yQ&view=coverart" width="100" height="100" frameborder="0" allowtransparency="true"></iframe>
+        <figcaption>EDM/DANCE</figcaption>
+      </figure>
+      <!-- ROCK (PL) -->
+      <figure class="col-xs-2">
+        <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:2Qi8yAzfj1KavAhWz1gaem&view=coverart" width="100" height="100" frameborder="0" allowtransparency="true"></iframe>
+        <figcaption>ROCK</figcaption>
+      </figure>
+
     </div>
-      <!-- END CAROUSEL -->
 
-      <div class="row">
-          <!-- LEFT SIDE DIV -->
-          <div class="col-xs-2">
-            <h2 align="center">Music by Genre</h2>
-            <a href="#" class="btn btn-default dispBlock sideButtons">Alternative</a>
-            <a href="#" class="btn btn-primary dispBlock sideButtons">Country</a>
-            <a href="#" class="btn btn-success dispBlock sideButtons">EDM/Dance</a>
-            <a href="#" class="btn btn-info dispBlock sideButtons">Hip-Hop</a>
-            <a href="#" class="btn btn-warning dispBlock sideButtons">Rock</a>
-            <a href="#" class="btn btn-danger dispBlock sideButtons">Funk</a>
-          </div>
+  <!-- USER INPUT BOX -->
+    <div class="row">
+      <form>
+        <input type="text" name="input" placeholder="Type Some Shit!" id="userInput">
+        <br>
+        <br>
+        <input type="submit" name="submit" value="DANCE!" class="submitClick">
+      </form>
+    </div>
+  <!-- END USER INPUT BOX -->
 
-          <!-- MIDDLE DIV -->
-          <div class="main col-xs-8">
-            <!-- USER INPUT BOX -->
-            <div class="row">
-              <div class="col-xs-12 main">
-                <form>
-                  <input type="text" name="input" placeholder="Type Some Shit!" id="userInput">
-                  <input type="submit" name="submit" class="submitClick">
-                </form>
-              </div>
+  <!-- CAROUSEL -->
+    <div class="row">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- CAROUSEL SLIDES -->
+        <div class="carousel-inner" role="listbox" id="slides">
+          <div class="item active">
+            <div class="item carousel-caption">
+                <p class="col-xs-4 col-xs-offset-4">See your dancing stick here!</p>
             </div>
           </div>
-
-
-          <!-- RIGHT SIDE DIV -->
-          <div class="col-xs-2 sides">
-            <h2 align="center">Music by Decade</h2>
-            <a href="#" class="btn btn-default dispBlock sideButtons">1960s</a>
-            <a href="#" class="btn btn-primary dispBlock sideButtons">1970s</a>
-            <a href="#" class="btn btn-success dispBlock sideButtons">1980s</a>
-            <a href="#" class="btn btn-info dispBlock sideButtons">1990s</a>
-            <a href="#" class="btn btn-warning dispBlock sideButtons">2000s</a>
-            <a href="#" class="btn btn-danger dispBlock sideButtons">2010s</a>
-          </div>
-
+        </div>
+      <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
+      <!-- Indicators -->
+        <!-- <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol> -->
       </div>
     </div>
+  <!-- END CAROUSEL -->
+
+  </div>
 
 
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/gifs.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
