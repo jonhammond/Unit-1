@@ -20,7 +20,7 @@ var MyGifs = {
       caption: 'E - Elbows Up'},
   f: {name: 'funkychicken-color',
       caption: 'F - The Funky Chicken'},
-  g: {name: 'gangnamstyle',
+  g: {name: 'gangnamstyle-color',
       caption: 'G - Gangnam Style'},
   h: {name: 'harlemshake-color',
       caption: 'H - The Harlem Shake'},
