@@ -11,9 +11,13 @@ body {
 header {
   text-align: center;
   color: rgba(252,85,255,1);
-  font-size: 50px;
+  font-size: 75px;
   font-family: "Moonhouse";
-  margin: 25px 0px;
+}
+
+h1 {
+  color: rgb(9,218,255);
+  font-family: "Orbitron";
 }
 
 p {
@@ -22,29 +26,42 @@ p {
   font-family: "Orbitron";
 }
 
+#formError {
+  font-family: "Orbitron";
+  color: red;
+}
+
+.addUser, .solo {
+  background-color: black;
+  font-family: "Orbitron";
+}
+
+.submitClick {
+  background-color: black;
+  color: rgb(88,254,46);
+  font-family: "Orbitron";
+  border-radius: 25px;
+  border: 1px solid rgb(88,254,46);
+}
+
 .hero {
+  color: orange;
   text-align: center;
   font-family: "Orbitron";
-  color: yellow;
 }
 
 .row {
-  margin: 25px;
-}
-
-.text {
-  font-family: "Orbitron";
-  color: rgb(9,218,255);
+  margin: 20px;
 }
 
 .carousel-caption {
   position: static;
   text-align: center;
   vertical-align: middle;
-  font-color: yellow;
+  color: yellow;
 }
 
-#userInput {
+#userInput, #userInputSecond {
   font: 20px bold;
   font-family: "Orbitron";
   color: orange;
@@ -57,10 +74,4 @@ p {
   border: 2px solid pink;
   margin-top: 25px;
   border-radius: 20px;
-}
-
-.submitClick {
-  background-color: black;
-  color: rgb(9,218,255);
-  font-family: "Orbitron";
 }

@@ -13,10 +13,13 @@
     <header>Ants in Mah Pants</header>
   <!-- END BANNER -->
 
-  <h1 class="text">Add a partner or dance solo...</h1>
-    <a href="#" class="btn "
+  <h1 class="text" id="options">Add a partner or dance solo...</h1>
+    <div class="row">
+      <a href="#" class="btn solo col-md-2 col-md-offset-3">Solo</a>
+      <a href="#" class="btn addUser col-md-2 col-md-offset-2">Add partner</a>
+    </div>
 
-  <h1 class="text">Pick some tunes...</h1>
+  <h1>Pick some tunes...</h1>
   <!-- SPOTIFY TUNES -->
     <div class="row">
       <!-- HIP-HOP (SONG) -->
@@ -54,17 +57,19 @@
 
   <!-- USER INPUT BOX -->
     <div class="row">
+      <form class="inputBoxes">
+        <input type="text" name="input" placeholder="User One" id="userInput">
+      </form>
+    </div>
+    <div class="row">
       <form>
-        <input type="text" name="input" placeholder="Type Some Shit!" id="userInput">
-        <br>
-        <br>
-        <input type="submit" name="submit" value="DANCE!" class="submitClick">
+        <input type="submit" name="submit" value="DANCE!" class="btn submitClick">
       </form>
     </div>
   <!-- END USER INPUT BOX -->
 
   <!-- CAROUSEL -->
-    <div class="row">
+    <div class="row carouselBank">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- CAROUSEL SLIDES -->
         <div class="carousel-inner" role="listbox" id="slides">

@@ -1,5 +1,5 @@
 $(document).on('ready', function () {
-  console.log(gifStr(MyGifs.a.name, MyGifs.a.caption));
+  // console.log(gifStr(MyGifs.a.name, MyGifs.a.caption));
 });
 
 function gifStr (imageName, myCaption) {
